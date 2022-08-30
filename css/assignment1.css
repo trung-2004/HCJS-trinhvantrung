@@ -1,0 +1,31 @@
+span{
+    background-color: #EA0000;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: #099ADB;
+}
+p {
+    font-size: 16px;
+    font-family: serif;
+    text-align: justify;
+}
+body{
+    width: 650px;
+    margin: auto;
+    line-height: 20px;
+}
+h1{
+    text-align: left;
+    font-size: 28px;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul li :hover{
+    color: #EA0000;
+}
+
+
