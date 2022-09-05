@@ -1,0 +1,54 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+.box-1{
+    font-size: 16px;
+    width: 100%;
+    line-height: 17px;
+    margin: 20px 25px;
+    box-sizing: border-box;
+}
+.clean{
+    clear: both;
+}
+#box-1{
+    width: 50%;
+    float: left;
+    line-height: 2px;
+}
+#box-2{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.box-3{
+    padding: 0px 40px;
+    list-style-type: "\27A2";
+}
+img{
+    max-width: 100%;
+    border: 20px;
+    margin: 0px 10% 0px 0px;
+}
+.box-5{
+    padding: 0px 30px;
+    margin: 10px;
+}
+.box-4{
+    line-height: 5px;
+    margin: 0px;
+}
+.box-9{
+    margin: 0px;
+}
+.box-6{
+    border-bottom: 1px solid black;
+    border-top: 10px solid white;
+}
+.box-8{
+    padding: 0px 0px 15px 0px;
+}
+
+
+
