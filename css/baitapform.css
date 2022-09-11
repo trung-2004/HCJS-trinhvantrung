@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
+h1{
+    color: #faf1ed;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+.title{
+    width: 100%;
+    height: 100px;
+    background-color: #02b503;
+    padding: 20px 10px 0px 40px;
+}
+.element{
+    width: 100%;
+}
+.name{
+    width: 100%;
+}
+.ten{
+    width: 100%;
+}
+.input{
+    height: 40px;
+}
+.email{
+    width: 100%;
+}
+.tel{
+    width: 100%;
+}
+button{
+    margin-top: 20px;
+    height: 40px;
+    width: 10%;
+}
+.first{
+    width: calc(50% - 10px);
+    float: left;
+    margin-right: 10px;
+}
+.last{
+    width: calc(50% - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.chiatren{
+    width: 100%;
+    margin-top: 20px;
+}
+.chiaduoi{
+    width: 100%;
+}
+.chiagiua{
+    width: 100%;
+}
+.dau{
+    width: calc(50% - 10px);
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 10;
+}
+.sau{
+    width: calc(50% - 10px);
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 5;
+}

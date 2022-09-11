@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Form</title>
+    <link rel="stylesheet" href="css/baitapform.css">
+</head>
+<body>
+<header class="section header">
+    <div class="container">
+        <div class="title">
+            <h1>Contract Form</h1>
+        </div>
+    </div>
+</header>
+<section class="section main">
+    <div class="container">
+        <form method="get" action="#">
+            <div class="element">
+                <div class="chiatren">
+                    <label class="name">Name:<sup style="color: #EA0000">*</sup></label><br>
+                </div>
+                <div class="chiagiua">
+                    <input class="input first" type="text" required name="first name" />
+                    <input class="input last" type="text" required name="last name" />
+                </div>
+                <div class="chiaduoi">
+                    <p style="font-size: 16px" class="dau">First name</p>
+                    <p style="font-size: 16px" class="sau">Last name</p>
+                </div>
+            </div>
+
+            <div class="element">
+                <label class="email">Email:<sup style="color: #EA0000">*</sup></label>
+                <input class="input email" type="email" required name="youremail"/>
+            </div>
+
+            <div class="element">
+                <label>Phone:<sup style="color: #EA0000">*</sup></label>
+                <input class="input tel" type="tel" required name="yournumber"/>
+            </div>
+
+            <div class="element">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
