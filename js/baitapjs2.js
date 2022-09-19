@@ -1,33 +1,41 @@
-var f = 100;
-var bt;
-var at;
-var ct;
-function quay1() {
-    var x = document.getElementById("quat");
-    x.style.transform ='rotate('+f+'deg)'; // xoay tròn
-    f+= 2;
+var f = false;
+var v = 0;
+var a = 0;
+
+function quaycanhquat() {
+    if(f == true){
+        var canhquat = document.getElementById("canhquat");
+        canhquat.style.transform = "rotate("+v+"deg)";
+        v +=a;
+    }
 }
-function so1() {
-    at = setInterval(quay1, 1);
-}
-function quay2() {
- var x = document.getElementById("quat");
- x.style.transform = 'rotate('+f+'deg)';
- f+=8;
-}
-function so2() {
-    bt = setInterval(quay2, 1);
-}
-function quay3() {
-    var x = document.getElementById("quat");
-    x.style.transform = 'rotate('+f+'deg)';
-    f+=14;
-}
-function so3() {
-    ct = setInterval(quay3, 1);
-}
+setInterval(quaycanhquat, 10);
+
 function tat() {
-    clearInterval(at);
-    clearInterval(bt);
-    clearInterval(ct);
+    f = false;
+    v = 0;
+    a = 0;
+}
+function f1() {
+    if(f==false){
+        f = true;
+    }
+    v = 0;
+    a = 10;
+}
+
+function f2() {
+    if(f==false){
+        f = true;
+    }
+    v = 0;
+    a = 20;
+}
+
+function f3() {
+    if(f==false){
+        f = true;
+    }
+    v = 0;
+    a = 30;
 }
