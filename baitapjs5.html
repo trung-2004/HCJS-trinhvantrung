@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI TẬP JS 5</title>
+    <link rel="stylesheet" href="css/baitapjs5.css"/>
+</head>
+<body>
+<header class="section header">
+    <div class="container">
+        <div class="header">
+            <h1>Drag-And-Drop Builder</h1>
+            <p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aienean sollicitudin, lorem quis bibendum auci elit consequat. Ipsutis sem.</p>
+        </div>
+    </div>
+</header>
+<section class="section main">
+    <div class="container">
+        <div id="sanpham">
+
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+  function getmenu() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      var data = JSON.parse(this.responseText);
+      var ls = data.data;
+      for (var i=0; i<ls.length;i++){
+        var li_html = `<div class="sanpham"><img width="50%" src="${ls[i].image}"/><div class="name"><span>Tên Sản Phẩm:</span><br>${ls[i].name}</div><br><div class="price">Price: ${ls[i].price}đ</div></div>`;
+        var menu = document.getElementById("sanpham");
+        menu.innerHTML += li_html;
+      }
+    }
+    var url ="https://foodgroup.herokuapp.com/api/today-special";
+    xhttp.open("GET",url,true);
+    xhttp.send();
+  }
+  getmenu();
+</script>
+</body>
+</html>
