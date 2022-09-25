@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI TẬP BOOTSTRAP 1</title>
+    <link rel="stylesheet" href="libs/bootstrap5.2.1/css/bootstrap.css"/>
+    <link rel="stylesheet" href="libs/bootstrap5.2.1/css/bootstrap-grid.rtl.css"/>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="row bg-info" id="ls">
+
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload=function (){
+        var data = JSON.parse(this.responseText);
+        var ls = data.list;
+        for( var i=0; i<ls.length;i++){
+            var li_html = `<div class="col-3">
+        <div class="card m-2 bg-primary rounded-4">
+          <div class="col-12">
+            <p class="card-title me-3 text-white">${ls[i].dt_txt}</p>
+          </div>
+          <div class="row">
+          <div class="col-6">
+            <h4 class="card-text me-3 text-white"><small class="">${ls[i].main.temp}<sup>o</sup>C</small></h4>
+            <p class="card-text me-3 text-white"><small>${ls[i].weather[0].description}</small></p>
+          </div>
+          <div class="col-6">
+            <img src=" http://openweathermap.org/img/wn/${ls[i].weather[0].icon}@2x.png" alt="..." style="width: 5rem">
+          </div>
+          </div>
+        </div>
+      </div>`;
+            var ds = document.getElementById("ls");
+            ds.innerHTML += li_html;
+        }
+    }
+    var url ="https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
+    xhttp.open("GET",url,true);
+    xhttp.send();
+</script>
+</body>
+</html>
